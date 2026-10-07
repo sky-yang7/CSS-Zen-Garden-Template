@@ -1,1 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+header {
+    word-spacing: 12%;
+}
+body {
+    background-image: url("images/main.png");
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+h3, h2 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+p {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    word-spacing: 15%;
+    line-height: 25px;
+}

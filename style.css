@@ -1,27 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
+:root {
+  --neon-yellow: #fcee0a;
+  --neon-cyan: #00ffd5;
+  --neon-pink: #ff0055;
+  --dark-bg: #030308;
+  --panel-bg: rgba(10, 10, 20, 0.85);
+  --font-family: 'Rajdhani', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 header {
-    word-spacing: 12%;
+  word-spacing: 12%;
 }
+
 body {
-    background-image: url("images/main.png");
-    background-size: cover;
-    background-position: center;
+  background-color: var(--dark-bg);
+  background-image: url("images/main.png");
+  background-size: 1440px auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  font-family: var(--font-family);
+  width: 100%;
 }
-h1 {
-  font-family: "Rajdhani", sans-serif;
+
+header h1 {
+  font-family: var(--font-family);
   font-weight: 700;
   font-style: normal;
+  text-shadow: 3px 3px rgb(0, 255, 213);
 }
-h3, h2 {
-  font-family: "Rajdhani", sans-serif;
+
+h3 + h2 {
+  font-family: var(--font-family);
   font-weight: 600;
   font-style: normal;
+  padding-top: 5px;
 }
+
 p {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    word-spacing: 15%;
-    line-height: 25px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-style: normal;
+  word-spacing: 15%;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+::selection {
+  background-color: var(--neon-yellow);
+  color: var(--neon-yellow);
+}
+
+div:empty {
+  display: block;
+}
+
+a:link {
+  color: var(--neon-cyan);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+a:visited {
+  color: var(--neon-cyan);
+}
+
+a:hover {
+  color: var(--neon-yellow);
+  text-shadow: 0 0 8px var(--neon-yellow);
+}
+
+a:focus, input:focus {
+  outline: 2px solid var(--neon-pink);
+  outline-offset: 2px;
+}
+
+a:active {
+  color: var(--neon-pink);
+}
+
+[target] {
+  font-weight: 600;
+}
+
+[target="_blank"] {
+  cursor: pointer;
+}
+
+a[href^="https"] {
+  border-bottom: 1px dashed var(--neon-cyan);
+}
+
+[lang|="en"] {
+  letter-spacing: 0.05em;
+}
+
+[title~="flower"] {
+  border-bottom: 1px dotted var(--neon-cyan);
 }

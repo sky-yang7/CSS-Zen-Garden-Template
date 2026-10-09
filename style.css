@@ -4,14 +4,15 @@
   --neon-yellow: #fcee0a;
   --neon-cyan: #00ffd5;
   --neon-pink: #ff0055;
-  --dark-bg: #030308;
+  --neon-blue: #03017E;
   --panel-bg: rgba(10, 10, 20, 0.85);
   --font-family: 'Rajdhani', sans-serif;
+  background-color: #fcee0a;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 6px;
   padding: 0;
 }
 
@@ -20,14 +21,11 @@ header {
 }
 
 body {
-  background-color: var(--dark-bg);
-  background-image: url("images/main.png");
-  background-size: 1440px auto;
-  background-position: top center;
+  background-image: url("images/main.png"), url("images/moon.png");
   background-repeat: no-repeat;
-  overflow-x: hidden;
-  font-family: var(--font-family);
-  width: 100%;
+  background-position: top right, bottom left;
+  padding-bottom: 1000px;
+  
 }
 
 header h1 {
@@ -54,8 +52,9 @@ p {
 }
 
 ::selection {
-  background-color: var(--neon-yellow);
-  color: var(--neon-yellow);
+  opacity: 35%;
+  background-color: var(--neon-blue);
+  color: var(--neon-cyan);
 }
 
 div:empty {
@@ -86,7 +85,7 @@ a:active {
 }
 
 [target] {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 [target="_blank"] {

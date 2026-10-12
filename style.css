@@ -11,6 +11,8 @@
   --text-main: #e0f7fc;
   --font-main: 'Rajdhani', sans-serif;
 }
+/* main color palettes/text color^ */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -62,6 +64,8 @@ header > h2 {
   color: rgb(0, 0, 0);
   margin-top: 5px;
 }
+/* headers/top^ */
+
 .intro {
   position: relative;
   width: 100%;
@@ -157,6 +161,8 @@ header > h2 {
   border: 10px solid var(--brightest-cyan);
   padding: 15px;
 }
+/* main sections^ */
+
 p {
   font-family: var(--font-main);
   font-weight: 400;
@@ -186,6 +192,8 @@ div, p {
 div p {
   color: inherit;
 }
+/*  mains/text and p's^ */
+
 a:link {
   color: var(--neon-cyan);
   text-decoration: none;
@@ -201,6 +209,8 @@ a:hover {
 }
 a:active {
   color: var(--neon-pink);
+/* mainly for links/highlighting/visited sites^ */
+
 }
 [title] {
   cursor: help;
@@ -270,6 +280,7 @@ p::first-letter {
   font-size: 1.3em;
   font-weight: 700;
 }
+/* first big letters^ */
 p::first-line {
   letter-spacing: 1px;
 }
@@ -279,6 +290,8 @@ p::before {
 p::after {
   content: "";
 }
+/* pseudo tags for parts of html (that aren't in html?) */
+
 .extra2 {
   display: block;
   position: absolute;
@@ -306,6 +319,7 @@ p::after {
   background-position: bottom;
   z-index: 4;
 }
+/* extra pictures^ (extra1&2) */
 footer {
   position: absolute;
   top: 5425px;
